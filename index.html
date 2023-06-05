@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duck Tamagotchi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="selection-screen">
+            <h1>Select Your Duck</h1>
+            <div class="duck-selection">
+                <img src="duck1.png" alt="Duck 1">
+                <button id="select-duck1">Select Duck 1</button>
+            </div>
+            <div class="duck-selection">
+                <img src="duck2.png" alt="Duck 2">
+                <button id="select-duck2">Select Duck 2</button>
+            </div>
+            <div id="name-input">
+                <label for="duck-name">Name Your Duck:</label>
+                <input type="text" id="duck-name">
+                <button id="name-duck">Name Duck</button>
+            </div>
+        </div>
+
+        <div id="game-screen" style="display: none;">
+            <h1 id="duck-name-display"></h1>
+            <img id="selected-duck" src="" alt="Your Duck">
+            <div id="status-bars">
+                <div class="status-bar">
+                    <label for="hunger">Hunger:</label>
+                    <progress id="hunger" max="100"></progress>
+                </div>
+                <div class="status-bar">
+                    <label for="fun">Fun:</label>
+                    <progress id="fun" max="100"></progress>
+                </div>
+                <div class="status-bar">
+                    <label for="cleanliness">Cleanliness:</label>
+                    <progress id="cleanliness" max="100"></progress>
+                </div>
+                <div class="status-bar">
+                    <label for="health">Health:</label>
+                    <progress id="health" max="100"></progress>
+                </div>
+                <div class="status-bar">
+                    <label for="sleep">Sleep:</label>
+                    <progress id="sleep" max="100"></progress>
+                </div>
+            </div>
+            <div id="action-buttons">
+                <button id="feed-duck">Feed Duck</button>
+                <button id="play-duck">Play with Duck</button>
+                <button id="clean-duck">Clean Duck</button>
+                <button id="heal-duck">Heal Duck</button>
+                <button id="sleep-duck">Put Duck to Sleep</button>
+            </div>
+            <div id="economy-system">
+                <p id="coins">Coins: 0</p>
+                <button id="play-minigame">Play Minigame</button>
+                <button id="upgrade-duck">Upgrade Duck</button>
+                <button id="upgrade-food">Upgrade Food</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
